@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(/imgs/viks.jpg);
+  background-image: url(./imgs/viks.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
