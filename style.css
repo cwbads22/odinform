@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./imgs/viks.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 5px 10px;
+}
+
+img {
+  width: 40px;
+}
+
+.logocwb {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 10px;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li {
+  list-style: none;
+  margin-inline: 1rem;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover a {
+  color: #000000;
+  transition: 0.3s;
+}
+
+/* Container - 2 parts. 1 with the odin logo and the other with the form */
+
+.container {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 7em;
+}
+
+.left img{
+  width: 12em;
+}
+
+.odintxt {
+  font-family: 'Macondo', cursive;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.formula {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(250, 235, 215, 0.7); /* alpha for opacity */
+  justify-content: space-evenly;
+}
+
+/* Form configs and design */
+
+
+.toptext {
+  width: 25em;
+  margin-left: 2.2em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.toptext p {
+  margin-top: 1em;
+}
+
+.whitebox {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin-left: 2.2em;
+}
+
+label, input {
+  display: flex;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  
+}
+
+.login {
+  color: #596D48;
+  text-decoration: none;
+}
+
+#account {
+  font-size: 1rem;
+  margin-left: 2.2em;
+}
+.formrow {
+  display: flex;
+  padding: 1%;
+}
+
+.form-element {
+  margin-right: 2.2em;
+  padding: 1%;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  width: 35vh;
+}
+
+input:focus {
+  border: 1px solid blue;
+}
+
+input:required:focus {
+  border: 1px solid rgb(0, 119, 255);
+  outline: none;
+  }
+
+input:focus:valid {
+  border: 1px solid #3964DC;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  outline: none;
+}
+
+input:focus:invalid {
+  border: 1px solid #3964DC;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  outline: none;
+}
+
+input:invalid {
+  color: black;
+}
+
+
+input:valid {
+  border: 1px solid #E5E7EB;
+}
+
+.error {
+  color: #C13838;
+  font-size: 9px;
+  margin-top: 3px;
+}
+
+.validated {
+  color: #3cd33c;
+}
+
+.create-account {
+  margin-left: 2.2em;
+}
+
+button {
+  background-color: #596D48;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  padding: 10px 40px 12px 40px;
+  font-size: .7rem;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  width: 30%;
+}
+
+#account {
+  font-family: "Roboto", sans-serif;
+}
